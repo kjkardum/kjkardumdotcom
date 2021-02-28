@@ -27,7 +27,7 @@ const Project = (props) => (
             </Col>
             <Col md={{ order: !props.reverse ? 'last' : 'first' }} className="about">
                 <b>{props.title} </b>{props.description && props.description.map((title,i)=>(
-                    <text key={i}>{title}<br/></text>
+                    <div style={{display:'inline'}} key={i}>{title}<br/></div>
                 ))}
             </Col>
         </Row>
